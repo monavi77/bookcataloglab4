@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #129cff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+.button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 70%;
+  max-width: 1000px;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.add-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 240px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #d4dce0b5;
+}
+
+.add-btn:hover {
+  background: #f0f0f0;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #e9a8ff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
